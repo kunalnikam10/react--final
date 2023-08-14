@@ -99,4 +99,8 @@
 .ticket-card p:first-of-type {
   color: #e74c3c;
 }
-
+@media only screen and (max-width: 600px) {
+  .kanban-board {
+   flex-direction: column;
+  }
+}
