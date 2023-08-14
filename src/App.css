@@ -1,0 +1,102 @@
+/* App container */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.App-header {
+  background-color: #4076ac;
+  padding: 20px;
+  color: rgb(253, 223, 208);
+}
+
+/* Controls */
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center; /* Center align horizontally */
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px; /* Add some spacing between the dropdowns */
+}
+
+.controls label {
+  color: #e2e7eb;
+  font-weight: bold;
+}
+
+.controls select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%; /* Ensure the dropdowns don't overflow their container */
+}
+
+.controls select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
+
+/* Kanban board */
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Group container */
+.group {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.group:hover {
+  transform: scale(1.02);
+}
+
+.group h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Ticket card */
+.ticket-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ticket-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-card h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.ticket-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.ticket-card p:first-of-type {
+  color: #e74c3c;
+}
+
